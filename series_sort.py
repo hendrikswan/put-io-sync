@@ -20,7 +20,7 @@ class SortSeries():
                 seriesMatch = self.seriesRegex.search(videoFile)
 
                 if seriesMatch:
-                    seriesName = seriesMatch.group('series').title().replace("-", " ").replace(".", "_")
+                    seriesName = seriesMatch.group('series').title().replace("-", " ").replace(".", " ")
                     seriesSeason = '%0*d' % (2, int(seriesMatch.group('season')))
                     seriesEpisode = seriesMatch.group('episode')
                     seriesExtension = seriesMatch.group('extension')
