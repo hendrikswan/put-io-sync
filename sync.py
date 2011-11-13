@@ -136,6 +136,7 @@ if __name__=="__main__":
             #arch_folder=get_root_folder(api, archive_folder_name)
             #download_items(api, "test_series", movies_folder)            
             try:
+                download_items(api, "movies", movies_folder)
                 #download_items(api, "series", series_downloads_folder)
             finally:
                 download_items(api, "movies", movies_folder)
